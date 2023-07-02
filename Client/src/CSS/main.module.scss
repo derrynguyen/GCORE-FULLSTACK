@@ -1,0 +1,387 @@
+@font-face {
+    font-family: ThanhHai;
+    src: url("./fonts/ProximaNova-Bold.woff");
+}
+@font-face {
+    font-family: ThanhHai;
+    src: url("./fonts/ProximaNova-Extrabld.woff");
+}
+@font-face {
+    font-family: ThanhHai;
+    src: url("./fonts/ProximaNova-Light.woff");
+}
+@font-face {
+    font-family: ThanhHai;
+    src: url("./fonts//ProximaNova-Regular.woff");
+}
+@font-face {
+    font-family: ThanhHai;
+    src: url("./fonts/ProximaNova-Semibold.woff");
+}
+@font-face {
+    font-family: ThanhHaiCustom1;
+    src: url("./fonts/DINPro.woff");
+}
+@font-face {
+    font-family: ThanhHaiCustom2;
+    src: url("./fonts/DINPro-Light.woff");
+}
+@font-face {
+    font-family: ThanhHaiCustom3;
+    src: url("./fonts/DINPro-Bold.woff");
+}
+@font-face {
+    font-family: ThanhHaiCustom4;
+    src: url("./fonts/DINPro-LightItalic.woff");
+}
+@font-face {
+    font-family: ThanhHaiCustom5;
+    src: url("./fonts/DINPro-Medium.woff");
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+body {
+    font-family: ThanhHai;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    margin: 0;
+}
+.main {
+    position: absolute;
+    width: 100%;
+    font-family: ThanhHai;
+    height: 100%;
+    overflow-y: scroll;
+    .header {
+        position: absolute;
+        width: 100%;
+        height: 15vh;
+        color: white;
+        .header-main {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            justify-content: space-around;
+            align-items: center;
+            .header-name {
+                width: 30vh;
+                p {
+                    color: black;
+                    font-size: 40px;
+                    span {
+                        color: red;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .header-navbar {
+                font-size: 15px;
+                font-family: ThanhHai;
+                width: fit-content;
+                .navbar-item {
+                    margin-left: 2vh;
+                    text-decoration: none;
+                    span {
+                        padding: 15px;
+                        width: 20vh;
+                        color: gray;
+                    }
+                }
+                .active {
+                    span {
+                        padding: 15px;
+                        font-weight: 300;
+                        font-family: ThanhHai;
+                        width: 20vh;
+                        background-color: #8a80d4;
+                        color: white;
+                        border-radius: 20px;
+                    }
+                }
+            }
+
+            .header-auth {
+                font-size: 15px;
+                font-family: ThanhHai;
+                width: fit-content;
+                .navbar-item {
+                    margin-left: 2vh;
+                    text-decoration: none;
+                    span {
+                        padding: 20px;
+                        width: 20vh;
+                        color: gray;
+                    }
+                }
+                .active {
+                    span {
+                        padding: 15px;
+                        font-weight: 300;
+                        font-family: ThanhHai;
+                        width: 20vh;
+                        background-color: #8a80d4;
+                        color: white;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        width: 100%;
+        height: 80vh;
+        margin-top: 15vh;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .content-home {
+            width: 100%;
+            .home-content {
+                width: 60%;
+                padding: 20px;
+                font-size: 15px;
+            }
+            h3 {
+                width: 60%;
+                padding: 20px;
+                font-size: 40px;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            .button {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 60%;
+                button {
+                    width: 100%;
+                    padding: 15px;
+                    background-color: #8a80d4;
+                    color: white;
+                    outline: none;
+                    border: none;
+                    &:hover {
+                        background-color: black;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .img-home {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .list-server {
+        width: 100%;
+        height: 60vh;
+        margin-top: 15vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        .list {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .server-one {
+                margin-right: 5vh;
+                width: 20%;
+                background-color: white;
+                height: fit-content;
+                border: 1px solid rgba(128, 128, 128, 0.219);
+                padding: 20px;
+                color: white;
+                border-radius: 20px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-image: url(../Image/img_girl.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                font-family: ThanhHai;
+                h4 {
+                    width: 100%;
+                    font-size: 30px;
+                    background-color: #ffcf0f;
+                    color: black;
+                    border-radius: 20px;
+                }
+                p {
+                    padding: 15px;
+                    background-color: white;
+                    border-radius: 20px;
+                    margin-top: 2vh;
+                    font-size: 20px;
+                    color: black;
+                }
+                span {
+                    padding: 15px;
+                    background-color: white;
+                    border-radius: 20px;
+                    margin-top: 2vh;
+                    color: black;
+                    font-size: 20px;
+                }
+            }
+            button {
+                margin-top: 5vh;
+                border-radius: 20px;
+                width: 100%;
+                padding: 15px;
+                background-color: #8a80d4;
+                color: white;
+                outline: none;
+                border: none;
+                &:hover {
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+        h3 {
+            font-size: 30px;
+            color: black;
+        }
+    }
+    h1 {
+        color: black;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .howtoplay {
+        width: 100%;
+        height: 50vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+
+        .box {
+            border: 1px solid rgba(128, 128, 128, 0.219);
+            margin-right: 5vh;
+            width: 20%;
+            height: fit-content;
+            background-color: rgb(245, 239, 239);
+            padding: 20px;
+            border-radius: 20px;
+            h5 {
+                border: 1px solid rgba(128, 128, 128, 0.219);
+
+                font-size: 20px;
+                width: fit-content;
+                padding: 15px;
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+            }
+            h3 {
+                border: 1px solid rgba(128, 128, 128, 0.219);
+                width: fit-content;
+                padding: 15px;
+                color: black;
+                background-color: #ffcf0f;
+                border-radius: 10px;
+            }
+            p {
+                border: 1px solid rgba(128, 128, 128, 0.219);
+                padding: 15px;
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+            }
+            button {
+                margin-top: 5vh;
+                border-radius: 20px;
+                width: 100%;
+                padding: 15px;
+                background-color: #8a80d4;
+                color: white;
+                outline: none;
+                border: none;
+                &:hover {
+                    background-color: white;
+                    cursor: pointer;
+                    color: black;
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: 25vh;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+        background-color: rgb(250, 248, 248);
+        color: white;
+        .left {
+            color: black;
+            padding: 20px;
+            width: 40%;
+            font-size: 13px;
+            .logo {
+                color: black;
+                font-size: 40px;
+                span {
+                    font-size: 20px;
+                    color: red;
+                }
+            }
+        }
+        .right {
+            color: black;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            span {
+                margin-top: 2vh;
+                i {
+                    margin-right: 2vh;
+                }
+            }
+        }
+        .center {
+            color: black;
+            text-align: center;
+            width: 50%;
+        }
+    }
+}
